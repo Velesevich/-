@@ -14,7 +14,7 @@ class Home_Animal(Animal):
     def __init__(self,kind, name, age, weigt,h=2):
         super().__init__(name,age,h)
 
-        self.kind = kinda
+        self.kind = kind
         self.weight=weigt
     def inf(self):
         print('The', self.kind, self.name,'have',self.age, 'ears old', 'and weight', self.weight,'kg')
