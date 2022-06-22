@@ -13,7 +13,7 @@ class Animal(ABC):
 class Home_Animal(Animal):
     def __init__(self,kind, name, age, weigt,h=2):
         super().__init__(name,age,h)
-
+        super().inf()
         self.kind = kind
         self.weight=weigt
     def inf(self):
@@ -23,6 +23,7 @@ class Home_Animal(Animal):
 class Wild_Animal(Animal):
     def __init__(self, name, age, kind,h):
         super().__init__(name,age,h)
+        super().inf()
         self.kind=kind
     def inf(self):
         print('The',self.kind,self.name,'have',self.age,'ears old')
@@ -30,6 +31,7 @@ class Wild_Animal(Animal):
 
 
 home=Home_Animal('cat', 'Barsik',3,5,1)
+
 print(Wild_Animal.__dict__)
 home.inf()
 home._Home_Animal__run()
