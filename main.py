@@ -6,9 +6,9 @@ class Animal(ABC):
         self.h=h
     @abstractmethod
     def inf(self):
-        # pass
-        print('Animal name:  ', self.name)
-        print('Animal age:   ',self.age)
+        pass
+        # print('Animal name:  ', self.name)
+        # print('Animal age:   ',self.age)
     def weight(self):
         print(self.h)
 class Food(ABC):
@@ -16,7 +16,8 @@ class Food(ABC):
         pass
     @abstractmethod
     def food(self):
-        print('Your food:  ')
+        pass
+        # print('Your food:  ')
 class Breackfast(Food):
 
     def __init__(self):
